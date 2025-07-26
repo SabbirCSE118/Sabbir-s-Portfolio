@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: url('pattern.png'); /* Optional background pattern */
+  background-size: cover;
+  background-position: center;
+  color: #222;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+
+/* Sidebar */
+.social-sidebar {
+  position: fixed;
+  top: 40%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: white;
+  padding: 10px;
+  border-radius: 0 5px 5px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.social-sidebar a {
+  color: #000;
+  font-size: 18px;
+}
+
+.social-sidebar a:hover {
+  color: #f1c40f;
+}
+
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 120px 20px 100px;
+  background: #f9f9f9;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  color: #000;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  color: #555;
+}
+
+.btn {
+  background-color: #f1c40f;
+  padding: 12px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #e1b307;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: inherit;
+}
+/* Contact Form */
+.contact-form {
+  max-width: 600px;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-sizing: border-box;
+  box-shadow: #555 0px 0px 10px;
+  text-box: #f1c40f;
+}
+.contact-form label {
+  font-weight: 600;
+}
+.contact-form-input {
+    color: #333;
+    padding: 2rem;
+    width: 100%;
+    border: 1px solid #ebebeb;
+    font-size: 1.6rem;
+    letter-spacing: 0px;
+    background: #f0f0f0;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 15px;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+  background: #f0f0f0;
+  transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #f1c40f;
+  outline: none;
+}
+.contact-form textarea {
+  height: 150px;
+  resize: vertical;
+}
+.form-message {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.contact-form button {
+  background-color: #e9a318;
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 40px;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 50%;
+    align-self: center;
+}
+.contact-form button:hover {
+  background-color: #ebe9e4;
+    background-image: url('./images/mail.png');
+    box-shadow: #555 0px 0px 10px;
+}
+
+.project-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.project-card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.project-card h3 {
+  margin: 15px 0;
+  font-size: 1.5rem;
+}
+.project-card p {
+  color: #555;
+  font-size: 1rem;
+}
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #f1c40f;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.project-grid .project-card {
+  transition: transform 0.3s;
+}
+
+.project-grid .project-card:hover {
+  transform: translateY(-5px);
+}
+
+.foot{
+    text-align: center;
+    padding: 10px;
+    margin: 20px 0;
+    background-color: #d8c98b;
+    color: black;
+}
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .social-sidebar {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
